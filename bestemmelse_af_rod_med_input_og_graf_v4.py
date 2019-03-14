@@ -1,4 +1,5 @@
 import math
+from decimal import Decimal
 kvadratrod=int(input('indtast det tal der skal findes kvadratrod af:'))
 print('Bestemmelse af kvadratroden af',kvadratrod)
 print('se graf for valg af x_0. Når x_0 er valgt lukkes grafen')
@@ -136,17 +137,21 @@ while True:
 x_resul=int(input('indtast x_0:'))
 #t.bye()
 print('x 0 =',x_resul)
-for n in range(1,100):
+for n in range(1,1000):
     x_n=x_resul
     x_n_1=n
     x_resul=x_n-((x_n**2)-kvadratrod)/(2*x_n)
     print('x',x_n_1,'=',x_resul)
-    if x_n - x_resul <0.0000000000001 and x_n - x_resul > -0.0000000000001:
+    if x_n - x_resul <0.00000000000001 and x_n - x_resul > -0.00000000000001:
         print('endeligt resultat:', x_resul)
         print('test af resultat')
         print(x_resul,'*',x_resul,'=',x_resul**2)
         if x_resul**2==kvadratrod:
+            print (kvadratrod)
+            print(math.sqrt(kvadratrod))
             print('den funde kvadratrod er korrekt')
         else:
+            print (kvadratrod)
+            print(math.sqrt(kvadratrod))
             print('den funde kvadratrod er tilmærmelsesvis korrekt')
         break
