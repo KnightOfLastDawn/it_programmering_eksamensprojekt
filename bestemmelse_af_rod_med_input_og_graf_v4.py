@@ -148,10 +148,10 @@ for n in range(1,1000):
         print(x_resul,'*',x_resul,'=',x_resul**2)
         if x_resul**2==kvadratrod:
             print (kvadratrod)
-            print(math.sqrt(kvadratrod))
+            print(x_resul**2 - kvadratrod)
             print('den funde kvadratrod er korrekt')
         else:
             print (kvadratrod)
-            print(math.sqrt(kvadratrod))
+            print(x_resul**2 - kvadratrod)
             print('den funde kvadratrod er tilmærmelsesvis korrekt')
         break
