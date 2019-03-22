@@ -146,7 +146,7 @@ for n in range(1,1000):
         print('endeligt resultat:', x_resul)
         print('test af resultat')
         print(x_resul,'*',x_resul,'=',x_resul**2)
-        if x_resul**2==kvadratrod:
+        if (x_resul**2-kvadratrod)==0:
             print (kvadratrod)
             print(x_resul**2 - kvadratrod)
             print('den funde kvadratrod er korrekt')
