@@ -119,7 +119,7 @@ def x_til_v2(kvadratrod):#afgør hvor meget der skal ligges til i nedenstående 
     elif 10000 < kvadratrod <= 1000000:
         x=kvadratrod/2000
     else:
-        x=kvadratrod/8000
+        x=kvadratrod/6000
     return x
 
 x=0
@@ -127,7 +127,8 @@ y=0
 x_v=0
 while True:
     t.goto(konverter_til_turtle_ks(x_v,funktion(x_v)))
-    x_v=x_v+x_til_v2(kvadratrod)
+    x_v=x_v+laengde(math.sqrt(kvadratrod))
+    #x_v=x_v+x_til_v2(kvadratrod)
     #print(konverter_til_turtle_ks(x_v,funktion(x_v)))
     if funktion(x_v)>ymax:
         #print(funktion(x_v))
@@ -155,3 +156,7 @@ for n in range(1,1000):
             print(x_resul**2 - kvadratrod)
             print('den funde kvadratrod er tilmærmelsesvis korrekt')
         break
+    elif n==999:
+        print (kvadratrod)
+        print(x_resul**2 - kvadratrod)
+        print('den funde kvadratrod er tilmærmelsesvis korrekt')
