@@ -2,7 +2,6 @@ x_n=4
 x_resul=4
 print('Bestemmelse af kvadratroden af 2')
 print('f(x)=x**2-2')
-print('f/(x)=2*x')
 print('')
 print('x 0=',x_n)
 for n in range(1,10):

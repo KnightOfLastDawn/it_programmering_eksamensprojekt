@@ -1,6 +1,5 @@
 kvadratrod=int(input('indtast det tal der skal findes kvadratrod af:'))
-import math
-def x_til(kvadratrod):#afgør hvor meget der skal ligges til i nedenstående loop
+def x_til(kvadratrod):
     if kvadratrod < 5:
         return 0.05
     if 5<= kvadratrod < 10:
@@ -10,10 +9,8 @@ def x_til(kvadratrod):#afgør hvor meget der skal ligges til i nedenstående loo
 
 print(x_til(kvadratrod))
 
-
-def x_til_v2(kvadratrod):#afgør hvor meget der skal ligges til i nedenstående loop
+def x_til_v2(kvadratrod):
     x=kvadratrod/200
     return x
 
 print(x_til_v2(kvadratrod))
-print (math.sqrt(1000))
