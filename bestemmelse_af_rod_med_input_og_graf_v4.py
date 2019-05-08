@@ -149,14 +149,14 @@ for n in range(1,1000):
         print(x_resul,'*',x_resul,'=',x_resul**2)
         if (x_resul**2-kvadratrod)==0:
             print (kvadratrod)
-            print(x_resul**2 - kvadratrod)
+            print('forskel melled den funde rod i anden og det angivne tal=',x_resul**2 - kvadratrod)
             print('den funde kvadratrod er korrekt')
         else:
             print (kvadratrod)
-            print(x_resul**2 - kvadratrod)
+            print('forskel melled den funde rod i anden og det angivne tal=',x_resul**2 - kvadratrod)
             print('den funde kvadratrod er tilmærmelsesvis korrekt')
         break
     elif n==999:
         print (kvadratrod)
-        print(x_resul**2 - kvadratrod)
+        print('forskel melled den funde rod i anden og det angivne tal=',x_resul**2 - kvadratrod)
         print('den funde kvadratrod er tilmærmelsesvis korrekt')
