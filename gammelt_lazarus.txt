@@ -1,0 +1,145 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  Menus, ExtCtrls, Buttons, Process, LCLType, ActnList;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Increase: TButton;
+    Reduce: TButton;
+    Povray_render: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Show_3D: TButton;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Transfer_to_program: TButton;
+    Integer_1: TEdit;
+    Exit1: TButton;
+    Label1: TLabel;
+    Run_python: TButton;
+    procedure IncreaseClick(Sender: TObject);
+    procedure ReduceClick(Sender: TObject);
+    procedure Label7Click(Sender: TObject);
+    procedure Povray_renderClick(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Exit1Click(Sender: TObject);
+    procedure Run_pythonClick(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure Show_3DClick(Sender: TObject);
+    procedure Transfer_to_programClick(Sender: TObject);
+  private
+
+  public
+
+  end;
+const
+  C_FNAME = 'textfile.txt';
+  Cnt: Integer = 6;
+
+var
+  Form1: TForm1;
+  RunProgram: TProcess;
+  RunProgram2: TProcess;
+  RunProgram3: TProcess;
+  tfOut: Textfile;
+  //UserString: string;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Exit1Click(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TForm1.Povray_renderClick(Sender: TObject);
+begin
+  RunProgram := TProcess.Create(nil);
+  RunProgram.CommandLine := 'povray ./povray_v2.pov';
+  RunProgram.Execute;
+  RunProgram.Free;
+end;
+
+procedure TForm1.IncreaseClick(Sender: TObject);
+begin
+  inc(Cnt);
+  Integer_1.Text:=IntToStr(Cnt);
+end;
+
+procedure TForm1.ReduceClick(Sender: TObject);
+begin
+  dec(Cnt);
+  Integer_1.Text:=IntToStr(Cnt);
+end;
+
+procedure TForm1.Label7Click(Sender: TObject);
+begin
+
+
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  RunProgram2 := TProcess.Create(nil);
+  RunProgram2.CommandLine := 'eog test1.png';
+  RunProgram2.Execute;
+  RunProgram2.Free;
+
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  RunProgram := TProcess.Create(nil);
+  RunProgram.CommandLine := 'convert lamp.eps test1.png';
+  RunProgram.Execute;
+  RunProgram.Free;
+end;
+
+procedure TForm1.Run_pythonClick(Sender: TObject);
+begin
+  RunProgram := TProcess.Create(nil);
+  RunProgram.CommandLine := 'python3 ./turtle2.py';
+  RunProgram.Execute;
+  RunProgram.Free;
+end;
+procedure TForm1.Button5Click(Sender: TObject);
+begin
+  RunProgram := TProcess.Create(nil);
+  RunProgram.CommandLine := 'python3 ./turtle1.py';
+  RunProgram.Execute;
+  RunProgram.Free;
+end;
+
+procedure TForm1.Show_3DClick(Sender: TObject);
+begin
+  RunProgram2 := TProcess.Create(nil);
+  RunProgram2.CommandLine := 'eog povray_v2.png';
+  RunProgram2.Execute;
+  RunProgram2.Free;
+end;
+
+procedure TForm1.Transfer_to_programClick(Sender: TObject);
+begin
+  AssignFile(tfOut,C_FNAME);
+  rewrite(tfOut);
+  Write(tfOut, Cnt);
+  CloseFile(tfOut);
+end;
+
+end.
