@@ -17,9 +17,9 @@ ymax=kvadratrod*3
 
 #angiver hvor mange pixels akserne skal være
 # min og max skal være ens
-xtmin=-480
+xtmin=-420
 ytmin=-380
-xtmax=480
+xtmax=420
 ytmax=380
 t.setup(width=0.7, height=0.8, startx=None, starty=None)
 # sets window to 70% of screen by 80% of screen and centers
