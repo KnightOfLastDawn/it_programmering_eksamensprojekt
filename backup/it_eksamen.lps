@@ -19,8 +19,8 @@
         <ComponentName Value="Form1"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="40"/>
-        <CursorPos X="19" Y="62"/>
+        <TopLine Value="39"/>
+        <CursorPos X="20" Y="61"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -73,7 +73,7 @@
       </Position11>
       <Position12>
         <Filename Value="it_interface.pas"/>
-        <Caret Line="62" Column="17" TopLine="39"/>
+        <Caret Line="62" Column="19" TopLine="40"/>
       </Position12>
     </JumpHistory>
   </ProjectSession>
