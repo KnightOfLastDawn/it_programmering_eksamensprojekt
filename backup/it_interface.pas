@@ -59,6 +59,7 @@ begin
   rewrite(tfOut);
   Write(tfOut, Cnt);
   CloseFile(tfOut);
+  Cnt=Edit2.Text ;
 end;
 
 
