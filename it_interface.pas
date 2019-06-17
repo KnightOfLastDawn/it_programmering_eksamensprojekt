@@ -5,7 +5,8 @@ unit it_interface;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+ Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  Menus, ExtCtrls, Buttons, Process, LCLType, ActnList;
 
 type
 
@@ -15,6 +16,7 @@ type
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
+    Button4: TButton;
     Edit2: TEdit;
     Edit3: TEdit;
     Exit1: TButton;
@@ -23,6 +25,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
 
   public
@@ -36,6 +39,7 @@ const
 var
   Form1: TForm1;
   tfOut: Textfile;
+  RunProgram: TProcess;
   //UserString: string;
 
 implementation
@@ -64,6 +68,15 @@ begin
   rewrite(tfOut);
   Write(tfOut, Cnt_1);
   CloseFile(tfOut);
+  RunProgram := TProcess.Create(nil);
+  RunProgram.CommandLine := 'python3 ./bestemmelse_af_rod_med_textfil_og_graf_v1.py';
+  RunProgram.Execute;
+  RunProgram.Free;
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+
 end;
 
 

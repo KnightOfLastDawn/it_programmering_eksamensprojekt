@@ -1,6 +1,14 @@
 import math
 from decimal import Decimal
-kvadratrod=int(input('indtast det tal der skal findes kvadratrod af:'))
+from tkinter import*
+
+file_to_read_from=open(file='textfile.txt', mode='r')
+for num in (file_to_read_from):
+    kvadratrod=int(num)
+    print(kvadratrod)
+file_to_read_from.close()
+
+#kvadratrod=int(input('indtast det tal der skal findes kvadratrod af:'))
 print('Bestemmelse af kvadratroden af',kvadratrod)
 print('se graf for valg af x_0. Når x_0 er valgt lukkes grafen')
 #print('f(x)=x**2-',kvadratrod)
