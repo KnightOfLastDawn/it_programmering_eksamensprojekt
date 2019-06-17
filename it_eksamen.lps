@@ -3,15 +3,14 @@
   <ProjectSession>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="4">
       <Unit0>
         <Filename Value="it_eksamen.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="23"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="20" Y="7"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="it_interface.pas"/>
@@ -20,14 +19,32 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="46"/>
-        <CursorPos X="31" Y="68"/>
-        <UsageCount Value="23"/>
+        <TopLine Value="40"/>
+        <CursorPos X="3" Y="63"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="spikesolution_1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="13" Y="27"/>
+        <UsageCount Value="22"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="spikesolution_1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form2"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="26" Y="25"/>
+        <UsageCount Value="21"/>
+      </Unit3>
     </Units>
-    <JumpHistory Count="13" HistoryIndex="12">
+    <JumpHistory Count="20" HistoryIndex="19">
       <Position1>
         <Filename Value="it_interface.pas"/>
         <Caret Line="21" Column="22"/>
@@ -80,6 +97,34 @@
         <Filename Value="it_interface.pas"/>
         <Caret Line="9" Column="15"/>
       </Position13>
+      <Position14>
+        <Filename Value="it_eksamen.lpr"/>
+        <Caret Line="10" Column="39"/>
+      </Position14>
+      <Position15>
+        <Filename Value="it_interface.pas"/>
+        <Caret Line="66" Column="31" TopLine="38"/>
+      </Position15>
+      <Position16>
+        <Filename Value="it_interface.pas"/>
+        <Caret Line="73" Column="31" TopLine="45"/>
+      </Position16>
+      <Position17>
+        <Filename Value="it_interface.pas"/>
+        <Caret Line="68" Column="28" TopLine="45"/>
+      </Position17>
+      <Position18>
+        <Filename Value="it_interface.pas"/>
+        <Caret Line="72" Column="31" TopLine="47"/>
+      </Position18>
+      <Position19>
+        <Filename Value="it_interface.pas"/>
+        <Caret Line="68" Column="34" TopLine="47"/>
+      </Position19>
+      <Position20>
+        <Filename Value="it_interface.pas"/>
+        <Caret Line="67" Column="34" TopLine="46"/>
+      </Position20>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

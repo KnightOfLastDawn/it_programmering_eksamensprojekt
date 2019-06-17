@@ -15,15 +15,14 @@ type
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
-    Button4: TButton;
     Edit2: TEdit;
+    Edit3: TEdit;
     Exit1: TButton;
     Edit1: TEdit;
     Label1: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
   private
 
   public
@@ -32,6 +31,7 @@ type
 const
   C_FNAME = 'textfile.txt';
   Cnt: Integer = 1;
+  Cnt_1: Integer =1;
 
 var
   Form1: TForm1;
@@ -59,15 +59,12 @@ procedure TForm1.Button3Click(Sender: TObject);
 begin
   AssignFile(tfOut,C_FNAME);
   rewrite(tfOut);
-  Write(tfOut, Cnt);
+  Write(tfOut, Cnt_1);
   CloseFile(tfOut);
+  Edit1.Text:=Edit2.Text;
+  Cnt_1:=StrToInt(Edit2.Text);
+  Edit3.Text:=IntToStr(Cnt_1);
 end;
-
-procedure TForm1.Button4Click(Sender: TObject);
-begin
-  Edit2.Text=: (IntToStr(Cnt);
-end;
-
 
 
 end.
