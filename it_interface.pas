@@ -16,7 +16,6 @@ type
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
-    Button4: TButton;
     Edit2: TEdit;
     Edit3: TEdit;
     Exit1: TButton;
@@ -25,7 +24,6 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
   private
 
   public
@@ -74,10 +72,6 @@ begin
   RunProgram.Free;
 end;
 
-procedure TForm1.Button4Click(Sender: TObject);
-begin
-  ShowMessage ('Hello world');
-end;
 
 
 end.
