@@ -76,7 +76,7 @@ end;
 
 procedure TForm1.Button4Click(Sender: TObject);
 begin
-
+  ShowMessage ('test');
 end;
 
 

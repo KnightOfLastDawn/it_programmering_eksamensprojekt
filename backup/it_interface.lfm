@@ -6,7 +6,7 @@ object Form1: TForm1
   Caption = 'Form1'
   ClientHeight = 240
   ClientWidth = 320
-  LCLVersion = '1.8.2.0'
+  LCLVersion = '2.0.0.4'
   object Button1: TButton
     Left = 232
     Height = 25
@@ -18,7 +18,7 @@ object Form1: TForm1
   end
   object Edit1: TEdit
     Left = 232
-    Height = 27
+    Height = 23
     Top = 72
     Width = 80
     TabOrder = 1
@@ -34,15 +34,15 @@ object Form1: TForm1
   end
   object Label1: TLabel
     Left = 40
-    Height = 17
+    Height = 15
     Top = 48
-    Width = 127
+    Width = 98
     Caption = 'Indtast en talværdi'
     ParentColor = False
   end
   object Edit2: TEdit
     Left = 64
-    Height = 27
+    Height = 23
     Top = 72
     Width = 80
     TabOrder = 3
@@ -59,7 +59,7 @@ object Form1: TForm1
   end
   object Edit3: TEdit
     Left = 232
-    Height = 27
+    Height = 23
     Top = 126
     Width = 80
     TabOrder = 5
