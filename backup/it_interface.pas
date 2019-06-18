@@ -72,12 +72,11 @@ begin
   RunProgram.CommandLine := 'python3 ./bestemmelse_af_rod_med_textfil_og_graf_v1.py';
   RunProgram.Execute;
   RunProgram.Free;
-  ShowMessage('burde virke?');
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);
 begin
-
+  ShowMessage ('test');
 end;
 
 
